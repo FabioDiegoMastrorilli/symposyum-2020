@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.editor-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.tui-image-editor-container .tui-image-editor-controls {
+	background: #272933 !important;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+.preview-background-container {
+	display: block;
+	margin: 0 auto;
+	width: 540px;
+	height: 600px;
+	position: relative;
+
+	.card,
+	.card-body,
+	.preview-background {
+		height: 100%;
+	}
+}
+
+.preview-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.print-preview {
+	position: absolute;
+	top: 20%;
+	left: 24%;
+	right: 24%;
+	bottom: 37%;
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
